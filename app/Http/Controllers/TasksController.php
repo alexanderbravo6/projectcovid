@@ -4,7 +4,7 @@ namespace Tasks\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Tasks\Tasks;
-use App\Http\Services\MessageServices;
+use Tasks\Http\Services\MessageServices;
 
 class TasksController extends Controller
 {

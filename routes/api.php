@@ -15,7 +15,14 @@ use Illuminate\Http\Request;
 
 
 //Route::middleware(['jwt.auth'])->group(function(){
+
+
     Route::get('Countries','CountriesController@getAll')->name('getAllCountries');
+
+    
+    Route::get('v1/worker/default','QueueController@getAll')->name('getAllCountries');
+
+
     Route::get('tasks','TasksController@getAll')->name('getAllTasks');
     Route::post('tasks','TasksController@add')->name('addTasks');
     Route::get('tasks/{id}','TasksController@get')->name('getTasks');

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Services;
+namespace Tasks\Http\Services;
 use GuzzleHttp\Client;
 Class MessageServices 
 {
 
 
  
-    public function all(){
+    public static function  all(){
 
         $validate=['auth' => ['elastic', 'Qx6gSNQaKiiJQg4VW0aROH4d']];
 
